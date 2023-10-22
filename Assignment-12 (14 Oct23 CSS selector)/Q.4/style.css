@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  width: 15%;
+  padding: 24px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  background-color: rgb(65, 154, 255);
+  color: white;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(0, 119, 255);
+  color: rgb(255, 196, 185);
+  box-shadow: 5px 5px 10px rgb(112, 112, 112);
+  font-size: 1.5rem;
+}

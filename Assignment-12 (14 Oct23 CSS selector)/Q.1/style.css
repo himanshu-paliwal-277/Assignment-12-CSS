@@ -1,0 +1,55 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+/* Task-B. (a) - Target all anchor tag to change the text color to red */
+header nav a {
+  /* color: red; */
+  color: green;
+}
+
+/* Task-B. (b) - Target only 1st h2 tag and change the text and backgroung color */
+header nav > h2 {
+  color: white;
+  background-color: gray;
+}
+
+/* Task-B. (c) - Select the first p tag and change text color to red */
+div + p {
+  color: red;
+}
+
+/* Task-C. (a) - Target anchor tag with attribute "href" and change the text color to red */
+a[href] {
+  color: red;
+  text-decoration: none;
+}
+
+/* Task-C. (b) - Target anchor tag with attribute class with value "active" and change the text color and provide the text decoration underline */
+a[class="active"] {
+  color: rgb(0, 225, 255);
+  text-decoration: underline;
+}
+
+/* Task-C. (c) - Target anchor tag with attribute target with value "_self" and change the background color */
+a[target="_self"] {
+  background-color: black;
+}
+
+/* Task-D. (a) - Target the last p tag and add "..." (three dots after its value) */
+nav p:last-child::after {
+  content: "...";
+}
+
+/* Task-D. (b) - Target the list of bullet points and change the color of bullet points */
+nav ul li::marker {
+  color: aqua;
+}
+
+/* Task-D. (c) - Target the 2nd p tag and select first letter of 2nd p tag and change the color to red and increase the font size */
+nav p:nth-child(4)::first-letter {
+  color: red;
+  font-size: 2.5rem;
+}

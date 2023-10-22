@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Task-1 :- Use the descendent combinator selector to remove list style and text underlining */
+header nav ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+/* Use the child combinator to display menu list item inline */
+nav ul > li {
+    display: inline;
+}
+
+/* Use the adjacent sibling combinator selector to apply some margin between the menu and list item */
+li + li {
+    margin: 13px;
+}
+
+header nav{
+    margin: 22px;
+}
